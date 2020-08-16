@@ -20,7 +20,7 @@ Otherwise you can compile Metis by:
 
 ```sh
 1) git clone https://github.com/EdisonLeeeee/METIS.git
-2) cd metis-5.1.0
+2) cd METIS/metis-5.1.0
 3) make config shared=1 prefix=~/.local/
 4) make install
 5) export METIS_DLL=~/.local/lib/libmetis.so

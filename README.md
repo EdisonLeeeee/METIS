@@ -19,10 +19,23 @@ Instead of compiling, it's often easier to:
 Otherwise you can compile Metis by:
 
 ```sh
-cd metis
-make config
-make
+1) git clone https://github.com/EdisonLeeeee/METIS.git
+2) cd metis-5.1.0
+3) make config shared=1 prefix=~/.local/
+4) make install
+5) export METIS_DLL=~/.local/lib/libmetis.so
 ```
 
-which creates `libmetis/libmetis.a`
+Install metis package:
+```bash
+pip install metis
+```
+
+testing metis
+```python
+>>> import networkx as nx
+>>> import metis
+>>> G = metis.example_networkx()
+>>> (edgecuts, parts) = metis.part_graph(G, 3)
+```
 
